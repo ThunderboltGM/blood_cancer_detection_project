@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <title>BloodSage</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><span class="logo_blood">Blood</span><span>Sage</span></div>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5000">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Heading -->
+    <div class="main_heading"><div><h1>BLOOD CANCER REPORT</h1></div></div>
+    <hr><br><br>
+    <div class="result_div">
+        <p><strong>ACCORDING TO THE IMAGE THAT YOU HAVE UPLOADED WE HAVE PREDICTED THAT YOU MAY HAVE "{{ output }}" STAGE OF BLOOD CANCER</strong></p>
+    </div>
+    <section class="about_section">
+        <h2>About {{ output }} stage of blood cancer</h2>
+        <br>
+        <p>{{ gemini_output1 }}</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Background Image */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('./images/backgroundimage1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.9);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo_blood{
+    color: red;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* Contact Form Section Styling */
+.contact_section {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+.contact_section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form_group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form_group input,
+.form_group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.submit_button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit_button:hover {
+    background-color: #3498db;
+}
+
+.submit_button:active {
+    background-color: #1e6f9f;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>BloodSage</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo_blood">Blood</span><span class="logo_sage">Sage</span></div>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5000">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Heading -->
+    <div class="main_heading"><div><h1>WELCOME TO THE PORTAL</h1></div></div>
+    <br>
+    <hr><br>
+    <button onclick="window.location.href='http://127.0.0.1:5000/project';" id="project_button">GO TO PROJECT</button>
+
+    <!-- About Section -->
+    <section id="about" class="about_section">
+        <h2>About This Project</h2>
+        <p>This project aims to raise awareness about blood cancer through predictive analysis based on uploaded images.
+            It utilizes Deep learning algorithms to provide insights and predictions about potential stages of blood
+            cancer.</p>
+    </section>
+    <section id="libraries" class="libraries_section">
+        <h2>Libraries Used in This Project</h2>
+        <ul>
+            <li>
+                <h3>Flask Framework</h3>
+                <p>Flask is a lightweight WSGI web application framework in Python. It is designed with simplicity and
+                    flexibility in mind, making it easy to build web applications quickly and efficiently. In this
+                    project, Flask is used to create the web interface and manage server-side logic.</p>
+            </li>
+            <li>
+                <h3>TensorFlow</h3>
+                <p>TensorFlow is an open-source library developed by Google for numerical computation and machine
+                    learning. It allows developers to build and train deep learning models, including sequential models
+                    like Convolutional Neural Networks (CNNs). In this project, TensorFlow is used to build and train a
+                    sequential model for blood cancer prediction.</p>
+            </li>
+            <li>
+                <h3>OpenCV</h3>
+                <p>OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning
+                    software library. OpenCV is used extensively for real-time image processing, and in this project, it
+                    is employed for preprocessing images before they are fed into the CNN model.</p>
+            </li>
+            <li>
+                <h3>Gemini LLM</h3>
+                <p>The Gemini LLM is a pre-trained large language model that provides advanced natural language
+                    processing capabilities. In this project, Gemini is used to generate text and insights based on
+                    model predictions and other data inputs, enhancing the interpretability of the results.</p>
+            </li>
+            <li>
+                <h3>SQLite3</h3>
+                <p>SQLite3 is a C-language library that provides a lightweight, disk-based database. It does not require
+                    a separate server process, making it an ideal choice for small to medium-sized applications. In this
+                    project, SQLite3 is used to manage the SQL database, storing user inputs, prediction results, and
+                    other necessary data.</p>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
